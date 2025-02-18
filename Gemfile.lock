@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/yfractal/sdb_signal.git
+  revision: c2456eacf005e0ef1c59427f5055c542096e7848
+  specs:
+    sdb_signal (0.1.0)
+      rb_sys (~> 0.9.91)
+
 PATH
   remote: ../../sdb
   specs:
@@ -624,6 +631,7 @@ DEPENDENCIES
   rucaptcha
   sass-rails
   sdb!
+  sdb_signal!
   second_level_cache
   shakapacker (~> 7.2.1)
   sidekiq (< 8)
