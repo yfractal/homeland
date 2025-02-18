@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
+gem 'sdb', path: '../../sdb'
+
 gem "jbuilder"
 gem "rails", "~> 7.1.3"
 gem "rails_autolink"

@@ -1,3 +1,9 @@
+PATH
+  remote: ../../sdb
+  specs:
+    sdb (0.1.0)
+      cpu_time
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -125,6 +131,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.3.1)
     connection_pool (2.4.1)
+    cpu_time (0.1.0)
     crass (1.0.6)
     date (3.3.4)
     dead_end (4.0.0)
@@ -616,6 +623,7 @@ DEPENDENCIES
   ruby-push-notifications
   rucaptcha
   sass-rails
+  sdb!
   second_level_cache
   shakapacker (~> 7.2.1)
   sidekiq (< 8)
