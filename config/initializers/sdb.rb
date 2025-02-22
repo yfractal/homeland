@@ -14,6 +14,6 @@ Thread.new do
   threads.each do |thread|
     puts "[#{thread.native_thread_id}] #{thread.name}"
   end
-
-  Sdb.scan_puma_threads(0.001)
 end
+
+Sdb.scan_all_threads(0.001)
