@@ -23,12 +23,3 @@ Thread.new do
 
   Sdb.scan_threads(puma_threads, 0.001)
 end
-
-Thread.new {
-  loop {
-    sleep 5
-    puts "[GC-compactor] start compact"
-    GC.compact
-    puts "[GC-compactor] end compact"
-  }
-}
