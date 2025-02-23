@@ -1,6 +1,7 @@
 require 'sdb'
 require 'puma'
 
+puts 'Enable auto compact'
 GC.auto_compact = true
 
 Sdb::PumaPatch.patch(Rails.logger)
@@ -25,9 +26,9 @@ end
 
 Thread.new {
   loop {
-    sleep 3
-    puts "gc compacted"
+    sleep 5
+    puts "[GC-compactor] start compact"
     GC.compact
+    puts "[GC-compactor] end compact"
   }
-
 }
