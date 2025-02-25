@@ -5,7 +5,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 gem 'sdb', path: '../../sdb'
-gem 'sdb_signal', github: 'yfractal/sdb_signal'
+gem 'sdb_signal', path: '../../sdb_signal'
 
 gem "jbuilder"
 gem "rails", "~> 7.1.3"

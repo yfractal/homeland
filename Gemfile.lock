@@ -1,6 +1,5 @@
-GIT
-  remote: https://github.com/yfractal/sdb_signal.git
-  revision: c2456eacf005e0ef1c59427f5055c542096e7848
+PATH
+  remote: ../../sdb_signal
   specs:
     sdb_signal (0.1.0)
       rb_sys (~> 0.9.91)
