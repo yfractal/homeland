@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
@@ -7,7 +5,7 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 gem 'sdb', path: '../../sdb'
 
 gem "jbuilder"
-gem "rails", "~> 7.1.3"
+gem "rails", "~> 8.0.0.beta1"
 gem "rails_autolink"
 gem "sass-rails"
 gem "shakapacker", "~> 7.2.1"
@@ -58,7 +56,6 @@ gem "ruby-push-notifications"
 gem "action-store"
 
 gem "enumize"
-gem "form-select"
 gem "kaminari"
 
 gem "exception-track"
@@ -67,7 +64,6 @@ gem "pghero"
 # Cache
 gem "connection_pool"
 gem "redis"
-gem "second_level_cache"
 
 # Setting
 gem "rails-settings-cached"
@@ -111,5 +107,5 @@ group :development, :test do
   gem "minitest-spec-rails"
   gem "mocha"
 
-  gem "standard"
+  gem "rubocop-rails-omakase", require: false
 end

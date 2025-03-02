@@ -1,4 +1,6 @@
 class CommentablePage < ApplicationRecord
+  second_level_cache
+  second_level_cache expires_in: 2.weeks
 end
 
 class Monkey < ApplicationRecord

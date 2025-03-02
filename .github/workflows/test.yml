@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2.0
+          ruby-version: 3.4
           bundler-cache: true
       - name: Install dependencies
         run: |
@@ -62,6 +62,9 @@ jobs:
         with:
           ruby-version: 3.2.0
           bundler-cache: true
+      - name: Install dependencies
+        run: |
+          sudo apt install -y imagemagick
       - name: Before tests
         run: bundle exec rails db:migrate
       - name: Run tests

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Topics
   module ListActions
     extend ActiveSupport::Concern
@@ -64,7 +62,7 @@ module Topics
       end
 
       # must include :user, because it's uses for _topic.html.erb fragment cache_key
-      scope.includes(:user)
+      scope.includes(:user, :node, :last_reply_user)
     end
   end
 end

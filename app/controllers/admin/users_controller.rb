@@ -1,9 +1,7 @@
-# frozen_string_literal: true
-
 module Admin
   class UsersController < Admin::ApplicationController
     def index
-      scope = User.all
+      scope = User.includes(:profile)
       scope = scope.where(type: params[:type]) if params[:type].present?
       scope = scope.where(state: params[:state]) if params[:state].present?
       field = params[:field] || "login"
