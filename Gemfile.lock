@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:yfractal/vernier.git
+  revision: 1e78afab6a1bcb9e40d6bc7209baf4e135dc1213
+  branch: v1.0.0-patch
+  specs:
+    vernier (1.0.0)
+
 PATH
   remote: ../../sdb
   specs:
@@ -561,6 +568,7 @@ PLATFORMS
   arm64-darwin-21
   arm64-darwin-22
   arm64-darwin-23
+  arm64-darwin-24
   x86_64-linux
   x86_64-linux-musl
 
@@ -634,6 +642,7 @@ DEPENDENCIES
   turbolinks
   twemoji
   uglifier
+  vernier!
   view_component (~> 2.83)
 
 BUNDLED WITH

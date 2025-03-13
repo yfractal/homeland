@@ -5,6 +5,8 @@ source "https://rubygems.org"
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 gem 'sdb', path: '../../sdb'
+# gem 'vernier', path: '../../vernier'
+gem "vernier", :git => 'git@github.com:yfractal/vernier.git', :branch => 'v1.0.0-patch'
 
 gem "jbuilder"
 gem "rails", "~> 7.1.3"
