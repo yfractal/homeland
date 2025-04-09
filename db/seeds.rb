@@ -25,6 +25,33 @@ nodes_data.each do |node_data|
   create_node(node_data)
 end
 
+def read_users
+  file_path = 'db/users.json'
+  file_content = File.read(file_path)
+  JSON.parse(file_content)['users']
+end
+
+users_data = read_users
+
+def create_user(user_data)
+  param = {
+    id: user_data['id'],
+    login: user_data['login'],
+    name: user_data['name'],
+    email: "#{user_data['id']}@example.com",
+    password: '123456abc',
+    # avatar_url: user_data['avatar_url']
+  }
+
+  User.create!(param)
+end
+
+users_data.each do |user_data|
+  create_user(user_data)
+end
+
+puts "Current User count #{User.count}"
+
 def read_topics
   file_path = 'db/topics.json'
   file_content = File.read(file_path)
@@ -53,6 +80,7 @@ topics_data = read_topics
 #               "hits"=>441,
 #               "abilities"=>{"update"=>false, "destroy"=>false, "ban"=>false, "normal"=>false, "excellent"=>false, "unexcellent"=>false, "close"=>false, "open"=>false}}
 
+@user_ids = User.pluck(:id)
 def create_topic(topic_data)
   node_id = topic_data['node_id']
   node = Node.find(node_id)
@@ -75,7 +103,7 @@ def create_topic(topic_data)
     suggested_at: topic_data['suggested_at'],
     closed_at: topic_data['closed_at'],
     # deleted: topic_data['deleted'],
-    user_id: topic_data['user']['id'],
+    user_id: @user_ids.sample,
     body: 'placeholder'
     # excellent: topic_data['excellent'],
     # hits: topic['hits'],

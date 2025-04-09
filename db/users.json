@@ -1,0 +1,204 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Rei",
+      "name": "Rei",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/1.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 101,
+      "login": "daqing",
+      "name": "大庆",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/101/a59b39.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 2,
+      "login": "huacnlee",
+      "name": "李华顺",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/2/de6df3.png!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 6553,
+      "login": "zzz6519003",
+      "name": "Snowmanzzz",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/6553.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 83307,
+      "login": "MarkHoo",
+      "name": "爱码士",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/83307/6e1adc.jpeg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 81765,
+      "login": "Mark24",
+      "name": "MARK24",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/81765/89a086.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 21002,
+      "login": "ttys000",
+      "name": "野生麻雀",
+      "avatar_url": "https://ruby-china.org/system/letter_avatars/t.png",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 29736,
+      "login": "gakki",
+      "name": "April_1991",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/29736/740d44.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 101593,
+      "login": "macolex",
+      "name": "沧月",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/101593/bb22a6.png!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 96143,
+      "login": "willx",
+      "name": "will",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/96143/24d894.png!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 1665,
+      "login": "ericguo",
+      "name": "Eric-Guo",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/1665/3f45c4.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 1638,
+      "login": "xiaoronglv",
+      "name": "吕小荣",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/1638.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 99750,
+      "login": "qinsicheng",
+      "name": "秦晨",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/99750/9298c6.png!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 99430,
+      "login": "daimeng",
+      "name": "dai",
+      "avatar_url": "https://ruby-china.org/system/letter_avatars/d.png",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 84548,
+      "login": "ccmywish",
+      "name": "ccmywish",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/84548/4b3396.png!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 99790,
+      "login": "Bruceeat",
+      "name": "薛文",
+      "avatar_url": "https://ruby-china.org/system/letter_avatars/b.png",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 13146,
+      "login": "maomao",
+      "name": "爱看雨的猫",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/13146/f28d72.jpg!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 99125,
+      "login": "newerer",
+      "name": "新手",
+      "avatar_url": "https://ruby-china.org/system/letter_avatars/n.png",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 102182,
+      "login": "528070506",
+      "name": "BlueJack",
+      "avatar_url": "https://l.ruby-china.com/user/avatar/102182/87826e.png!large",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    },
+    {
+      "id": 35615,
+      "login": "xiaox",
+      "name": "小叉",
+      "avatar_url": "https://ruby-china.org/system/letter_avatars/x.png",
+      "abilities": {
+        "update": false,
+        "destroy": false
+      }
+    }
+  ]
+}
