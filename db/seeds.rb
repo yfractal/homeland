@@ -1,5 +1,30 @@
 require 'json'
 
+def read_nodes
+  file_path = 'db/nodes.json'
+  file_content = File.read(file_path)
+  JSON.parse(file_content)['nodes']
+end
+
+nodes_data = read_nodes
+
+def create_node(node_data)
+  param = {
+    id: node_data['id'],
+    name: node_data['name'],
+    summary: node_data['summary'],
+    sort: node_data['sort'],
+    updated_at: node_data['updated_at'],
+    created_at: node_data['updated_at']
+  }
+
+  Node.create(param)
+end
+
+nodes_data.each do |node_data|
+  create_node(node_data)
+end
+
 def read_topics
   file_path = 'db/topics.json'
   file_content = File.read(file_path)
@@ -29,6 +54,10 @@ topics_data = read_topics
 #               "abilities"=>{"update"=>false, "destroy"=>false, "ban"=>false, "normal"=>false, "excellent"=>false, "unexcellent"=>false, "close"=>false, "open"=>false}}
 
 def create_topic(topic_data)
+  node_id = topic_data['node_id']
+  node = Node.find(node_id)
+  raise 'node not found' if node.nil?
+
   param = {
     id: topic_data['id'],
     title: topic_data['title'],
@@ -60,8 +89,3 @@ topics_data.each do |topic_data|
 end
 
 puts "Current Topic count #{Topic.count}"
-
-# ============ init Section, Node ================
-%w[Fun Movie Music Apple Goolge Coding].each do |name|
-  Node.create!(name: name, summary: "...")
-end
